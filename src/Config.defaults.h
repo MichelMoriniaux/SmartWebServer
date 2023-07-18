@@ -59,7 +59,12 @@
 #endif
 
 #ifndef AXIS1_ENCODER
-#define AXIS1_ENCODER                 OFF     // AB, AB_ESP32, CW_CCW, PULSE_DIR, AS37_H39B_B. RA/Azm (A/MA) & (B/SLO)
+#define AXIS1_ENCODER                 OFF     // AB, AB_ESP32, CW_CCW, PULSE_DIR, BISS. RA/Azm (A/MA) & (B/SLO)
+#endif
+#if AXIS1_ENCODER == BISS
+#ifndef AXIS1_BISS_ENCODER_VARIANT
+#define AXIS1_BISS_ENCODER_VARIANT == AS37_H39B_B // AS37_H39B_B default encoder for BISS
+#endif
 #endif
 #ifndef AXIS1_ENCODER_TICKS_DEG
 #define AXIS1_ENCODER_TICKS_DEG       22.222  // encoder ticks per degree
@@ -75,7 +80,12 @@
 #endif
 
 #ifndef AXIS2_ENCODER
-#define AXIS2_ENCODER                 OFF     // AB, AB_ESP32, CW_CCW, PULSE_DIR, AS37_H39B_B. RA/Azm (A/MA) & (B/SLO)
+#define AXIS2_ENCODER                 OFF     // AB, AB_ESP32, CW_CCW, PULSE_DIR, BISS. RA/Azm (A/MA) & (B/SLO)
+#endif
+#if AXIS2_ENCODER == BISS
+#ifndef AXIS2_BISS_ENCODER_VARIANT
+#define AXIS2_BISS_ENCODER_VARIANT == AS37_H39B_B // AS37_H39B_B default encoder for BISS
+#endif
 #endif
 #ifndef AXIS2_ENCODER_TICKS_DEG
 #define AXIS2_ENCODER_TICKS_DEG       22.222  // encoder ticks per degree

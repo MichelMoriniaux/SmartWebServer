@@ -57,21 +57,21 @@
 // Some of these settings are stored in NV (EEPROM) as the default values when first uploaded.  Later changes below may be
 // ignored unless NV is wiped or you configure to revert to the defaults again at runtime.
 #define ENC_AUTO_SYNC_DEFAULT          ON //     ON, Automatically sync Encoders to OnStep.                                   Option
-#define ENC_AUTO_SYNC_MEMORY          OFF //    OFF, ON Remember automatic sync setting across power cycles.                  Option
+#define ENC_AUTO_SYNC_MEMORY           ON //    OFF, ON Remember automatic sync setting across power cycles.                  Option
 #define ENC_SYNC_DURING_GOTO           ON //    OFF, ON high resolution encoders correct pointing even for gotos.             Option
 
-#define AXIS1_ENCODER               BISS //    OFF, AB, AB_ESP32, CW_CCW, PULSE_DIR, BISS. RA/Azm (A/MA) & (B/SLO.)   Option
-#define AXIS1_BISS_ENCODER_VARIANT  AS37_H39B_B //    AS37_H39B_B or TRI24 for trident 24 bit custom encoder                  Option
-#define AXIS1_ENCODER_TICKS_DEG 23301.689 // 22.222, n, (ticks/degree.) Encoder ticks per degree.                             Adjust
-#define AXIS1_ENCODER_REVERSE          ON //    OFF, ON to reverse the count direction.                                       Option
+#define AXIS1_ENCODER                BISS //    OFF, AB, AB_ESP32, CW_CCW, PULSE_DIR, BISS. RA/Azm (A/MA) & (B/SLO.)          Option
+#define AXIS1_BISS_ENCODER_VARIANT  TRI24 //    AS37_H39B_B or TRI24 for trident 24 bit custom encoder                        Adjust
+#define AXIS1_ENCODER_TICKS_DEG 46603.378 // 22.222, n, (ticks/degree.) Encoder ticks per degree.                             Adjust
+#define AXIS1_ENCODER_REVERSE         OFF //    OFF, ON to reverse the count direction.                                       Option
 #define AXIS1_ENCODER_DIFF_LIMIT_TO     0 //    300, n, (arcsec.) Minimum diff. between encoder/OnStep for sync. to OnStep.   Adjust
 #define AXIS1_ENCODER_DIFF_LIMIT_FROM 14400 //  OFF, n, (arcsec.) Maximum diff. between encoder/OnStep for sync. from OnStep. Adjust
                                           //         for absolute encoders.
 
-#define AXIS2_ENCODER                BISS //    OFF, AB, AB_ESP32, CW_CCW, PULSE_DIR, BISS. Dec/Alt (A/MA) & (B/SLO.)  Option
-#define AXIS2_BISS_ENCODER_VARIANT  AS37_H39B_B //    AS37_H39B_B or TRI24 for trident 24 bit custom encoder                  Option
-#define AXIS2_ENCODER_TICKS_DEG 23301.689 // 22.222, n, (ticks/degree.) Encoder ticks per degree.                             Adjust
-#define AXIS2_ENCODER_REVERSE          ON //    OFF, ON to reverse the count direction.                                       Option
+#define AXIS2_ENCODER                BISS //    OFF, AB, AB_ESP32, CW_CCW, PULSE_DIR, BISS. Dec/Alt (A/MA) & (B/SLO.)         Option
+#define AXIS2_BISS_ENCODER_VARIANT  TRI24 //    AS37_H39B_B or TRI24 for trident 24 bit custom encoder                        Adjust
+#define AXIS2_ENCODER_TICKS_DEG 46603.378 // 22.222, n, (ticks/degree.) Encoder ticks per degree.                             Adjust
+#define AXIS2_ENCODER_REVERSE         OFF //    OFF, ON to reverse the count direction.                                       Option
 #define AXIS2_ENCODER_DIFF_LIMIT_TO     0 //    300, n, (arcsec.) Minimum diff. between encoder/OnStep for sync. to OnStep.   Adjust
 #define AXIS2_ENCODER_DIFF_LIMIT_FROM 14400 //  OFF, n, (arcsec.) Maximum diff. between encoder/OnStep for sync. from OnStep. Adjust
                                           //         for absolute encoders.
