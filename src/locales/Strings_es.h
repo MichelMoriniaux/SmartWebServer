@@ -44,6 +44,7 @@
 #define L_ACTIVE "Activado"
 #define L_INACTIVE "Desactivado"
 #define L_BEST "El mejor"
+#define L_ALTERNATE "Alterna"
 
 // ---------------------------- Index ----------------------------
 // date/time
@@ -86,6 +87,11 @@
 #define L_AT_HOME "En Posición de Inicio"
 #define L_SLEWING "Girando"
 #define L_PPS_SYNC "Sincronizar PPS"
+#define L_HOME_REV "Inverso"
+#define L_HOME_OFFSET "Desplazamiento desde la posición de detección inicial:"
+#define L_HOME_OFFSET_RANGE_AXIS1 "Axis1, +/-162000 arc-sec"
+#define L_HOME_OFFSET_RANGE_AXIS2 "Axis2, +/-162000 arc-sec"
+#define L_HOME_AUTO "Inicio automáticamente al inicio:"
 
 // tracking
 #define L_REFR_COMP_RA "RC"
@@ -299,6 +305,11 @@
 #define L_MERIDIAN_FLIP_PAUSE "Volteo de Meridiano, Pausa en Posicion de Inicio"
 #define L_MERIDIAN_FLIP_PPS "Volteo de Meridiano, lado del muelle preferido"
 
+#define L_ORIENTATION_AUTO "Cambio de orientación"
+#define L_ORIENTATION_CHANGE_NOW L_MERIDIAN_FLIP_NOW
+#define L_ORIENTATION_CHANGE_PAUSE "Voltear, pausar en casa"
+#define L_ORIENTATION_CHANGE_PPS "Voltear, orientación preferida"
+
 // ------------------------ Configuration ------------------------
 
 #define L_BASIC_SET_TITLE "Básico:"
@@ -372,6 +383,7 @@
 #define L_ADV_DISABLE "Desactivar Configuración Avanzada (Valores por defecto al reiniciar)"
 #define L_ADV_SET_AXIS_NO_EDIT "Deshabilitar la edición del eje."
 #define L_ADV_SET_NO_EDIT "La edición de todos los ejes está deshabilitada en este momento. Tal vez esta función no esté habilitada (por lo que los valores predeterminados de configuración relacionados están activos) o necesite reiniciar OnStep."
+#define L_ADV_SET_FOOTER_MSG0 "La mayoría de los cambios en la configuración de los ejes requieren un reinicio para que surtan efecto."
 #define L_ADV_SET_FOOTER_MSG1 "Después de presionar [Cargar], tome nota de los cambios anteriores, ya que la carga puede haber sido rechazada debido a un parámetro no válido."
 #define L_ADV_SET_FOOTER_MSG2 "Cuando elige [Revertir], ese grupo deja de estar disponible para editar hasta que reinicia OnStep."
 #define L_ADV_SET_FOOTER_MSG3 "Si IRUN se establece en un valor diferente al predeterminado de Config.h, IHOLD se establece en(HALF.)"

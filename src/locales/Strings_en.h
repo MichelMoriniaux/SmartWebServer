@@ -44,6 +44,7 @@
 #define L_ACTIVE "Active"
 #define L_INACTIVE "Inactive"
 #define L_BEST "Best"
+#define L_ALTERNATE "Alternate"
 
 // ---------------------------- Index ----------------------------
 // date/time
@@ -86,6 +87,11 @@
 #define L_AT_HOME "At Home"
 #define L_SLEWING "Slewing"
 #define L_PPS_SYNC "PPS Sync"
+#define L_HOME_REV "Reverse"
+#define L_HOME_OFFSET "Offset from home sense position:"
+#define L_HOME_OFFSET_RANGE_AXIS1 "Axis1, +/-162000 arc-sec"
+#define L_HOME_OFFSET_RANGE_AXIS2 "Axis2, +/-162000 arc-sec"
+#define L_HOME_AUTO "Automatically home at startup:"
 
 // tracking
 #define L_REFR_COMP_RA "RC"
@@ -299,6 +305,11 @@
 #define L_MERIDIAN_FLIP_PAUSE "Meridian Flip, Pause at Home"
 #define L_MERIDIAN_FLIP_PPS "Meridian Flip, Preferred Pier Side"
 
+#define L_ORIENTATION_AUTO "Orientation Change"
+#define L_ORIENTATION_CHANGE_NOW L_MERIDIAN_FLIP_NOW
+#define L_ORIENTATION_CHANGE_PAUSE "Flip, Pause at Home"
+#define L_ORIENTATION_CHANGE_PPS "Flip, Preferred Orientation"
+
 // ------------------------ Configuration ------------------------
 
 #define L_BASIC_SET_TITLE "Basic:"
@@ -372,6 +383,7 @@
 #define L_ADV_DISABLE "Disable Advanced Configuration (all defaults on reboot)"
 #define L_ADV_SET_AXIS_NO_EDIT "Editing of this axis has been disabled."
 #define L_ADV_SET_NO_EDIT "Editing of all axes is disabled at the moment.  Perhaps this feature is not enabled (so the related configuration defaults are active) or you need to reboot OnStep."
+#define L_ADV_SET_FOOTER_MSG0 "Most axis setting changes require a reboot to take effect."
 #define L_ADV_SET_FOOTER_MSG1 "After pressing [Upload] take note of changes above since the upload may have been rejected due to an invalid parameter."
 #define L_ADV_SET_FOOTER_MSG2 "When you choose to [Revert] that group becomes unavailable for editing until you reboot OnStep."
 #define L_ADV_SET_FOOTER_MSG3 "If IRUN is set to other than the Config.h default, IHOLD is set to 50% (HALF.)"

@@ -53,6 +53,7 @@
 #define L_ACTIVE "Aktiv"
 #define L_INACTIVE "Inaktiv"
 #define L_BEST "Am besten"
+#define L_ALTERNATE "Wechseln"
 
 // ---------------------------- Index ----------------------------
 // date/time
@@ -95,6 +96,11 @@
 #define L_AT_HOME "Bei Homeposition"
 #define L_SLEWING "Schwenke"
 #define L_PPS_SYNC "PPS Sync"
+#define L_HOME_REV "Umkehren"
+#define L_HOME_OFFSET "Versatz zur Home-Sense-Position:"
+#define L_HOME_OFFSET_RANGE_AXIS1 "Axis1, +/-162000 arc-sec"
+#define L_HOME_OFFSET_RANGE_AXIS2 "Axis2, +/-162000 arc-sec"
+#define L_HOME_AUTO "Automatisch nach Hause beim Start:"
 
 // tracking
 #define L_REFR_COMP_RA "RC"
@@ -309,6 +315,11 @@
 #define L_MERIDIAN_FLIP_PAUSE "Pausiere an Homeposition w&auml;hrend Meridian Flip"
 #define L_MERIDIAN_FLIP_PPS "Meridianflip, bevorzugte Pierseite"
 
+#define L_ORIENTATION_AUTO "Orientierungsänderung"
+#define L_ORIENTATION_CHANGE_NOW L_MERIDIAN_FLIP_NOW
+#define L_ORIENTATION_CHANGE_PAUSE "Umdrehen, zu Hause innehalten"
+#define L_ORIENTATION_CHANGE_PPS "Umdrehen, bevorzugte Ausrichtung"
+
 // ------------------------ Configuration ------------------------
 
 #define L_BASIC_SET_TITLE "Basic:"
@@ -383,6 +394,7 @@
 #define L_ADV_DISABLE "Deaktivieren Sie die erweiterte Konfiguration (alle Standardeinstellungen beim Neustart)"
 #define L_ADV_SET_AXIS_NO_EDIT "Die Bearbeitung dieser Achse ist derzeit deaktiviert."
 #define L_ADV_SET_NO_EDIT "Deaktivieren Sie die erweiterte Konfiguration (alle Standardeinstellungen beim Neustart)"
+#define L_ADV_SET_FOOTER_MSG0 "Die meisten Änderungen an den Achseneinstellungen erfordern einen Neustart, damit sie wirksam werden."
 #define L_ADV_SET_FOOTER_MSG1 "Beachten Sie nach dem Drücken von [Upload] die obigen Änderungen, da der Upload möglicherweise aufgrund eines ungültigen Parameters abgelehnt wurde."
 #define L_ADV_SET_FOOTER_MSG2 "Wenn Sie [Zurücksetzen] wählen, kann diese Gruppe erst bearbeitet werden, wenn Sie OnStep neu starten."
 #define L_ADV_SET_FOOTER_MSG3 "Wenn IRUN auf einen anderen Wert als den Standardwert von Config.h eingestellt ist, wird IHOLD auf 50% (HALF) eingestellt."
