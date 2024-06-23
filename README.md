@@ -8,6 +8,13 @@ Support for encoders where it integrates tightly with OnStep; or if not using En
 There is also support for using the "ACGAM R1 Bluetooth 4.0 Wireless Gamepad" over Bluetooth LE which you can read about here:
 https://onstep.groups.io/g/main/wiki/26762
 
+# Manticore specifics
+The secondary ESP32 on the manticore provides the following services:
+- runs the SWS
+- Ethernet port connectivity
+- Limit switch
+- Homing switches for the 2 axis
+
 # Flashing The Smart Web Server
 The exact flashing procedure depends on which device you will be using.  You can find instructions for setting up the SWS in its Wiki here:
 https://onstep.groups.io/g/main/wiki/26881
